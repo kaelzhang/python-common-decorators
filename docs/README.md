@@ -17,7 +17,7 @@ $ pip install common-decorators
 
 ```py
 from common_decorators import (
-  lazy
+    lazy
 )
 ```
 
