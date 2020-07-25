@@ -16,7 +16,24 @@ $ pip install common-decorators
 ## Usage
 
 ```py
-import common_decorators
+from common_decorators import (
+  lazy
+)
+```
+
+### @lazy
+
+Defines a getter property and will assign the attribute as a normal value after the first get
+
+```py
+class Foo:
+    @lazy
+    def bar(self):
+        return theVeryHeavyCalculation()
+
+foo = Foo()
+
+print(foo.bar)
 ```
 
 ## License
