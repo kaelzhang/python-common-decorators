@@ -24,6 +24,10 @@ def test_lazy():
     assert a.a == 1
     assert a.a == 1
 
+    # a normal attribute
+    a.a = 2
+    assert a.a == 2
+
     b = A()
 
     assert b.b == 1
